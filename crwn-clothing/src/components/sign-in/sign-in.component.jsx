@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import FormInput from '../form-input/form-input.component';
 import CustomButtom from '../custom-button/custom-button.component';
 
+import { auth, signInWithGoogle } from '../../firebase/firebase.utils';
 import { googleSignInStart, emailSignInStart } from '../../redux/user/user.actions';
 
 

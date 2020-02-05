@@ -31,11 +31,11 @@ export function* signInWithEmail({payload: {email, password}}) {
 }
 
 export function* onGoogleSignInStart() {
-    yield takeLatest(UserActionsTypes.GOOGLE_SIGN_IN_START, signInWithEmail)
+    yield takeLatest(UserActionsTypes.GOOGLE_SIGN_IN_START, signInWithGoogle)
 }
 
 export function* onEmailSignInStart() {
-    yield takeLatest(UserActionTypes.EMAIL_SIGN_IN_START, )
+    yield takeLatest(UserActionTypes.EMAIL_SIGN_IN_START, signInWithEmail)
 }
 
 export function* userSagas() {
